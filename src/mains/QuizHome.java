@@ -1,21 +1,21 @@
 package mains;
 
 import java.awt.Dimension;
-import java.awt.Toolkit;
-
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JOptionPane;
-
 import java.awt.Font;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.Random;
 
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 
 import questions.QuestionNew;
 import quiz.SubjectSelection;
@@ -23,10 +23,6 @@ import results.Result;
 import students.StudentNew;
 import students.StudentUpdate;
 import subjects.SubjectNew;
-
-import java.awt.event.WindowFocusListener;
-import java.awt.event.WindowEvent;
-import java.util.Random;
 
 public class QuizHome extends JFrame implements ActionListener{
 
